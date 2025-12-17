@@ -31,13 +31,12 @@ To improve generalization, the following augmentations are applied during traini
 
 **Temporal Augmentations**
 - Frame dropout
-- Speed jitter (temporal resampling)
+- Speed jitter
 - Random temporal cropping
 - Sequence reversal
 
 **Spatial Augmentations**
 - Random cropping
-- Small-angle rotations
 - Gaussian noise injection
 
 ---
@@ -76,6 +75,5 @@ All models use **MobileNetV2** adapted for **single-channel MRI input**.
 ├── augmentation.py        # Temporal & spatial data augmentation
 ├── Data_loader.py         # ACDC MRI dataset loader
 ├── models.py              # CNN-LSTM, ConvLSTM, Transformer models
-├── train.py               # Model training pipeline
-├── test.py                # Evaluation and metrics
+├── AC_DC.inpy             # Model training pipeline and Testing
 └── README.md
